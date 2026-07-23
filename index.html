@@ -9,20 +9,35 @@
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="logo">Raizon Asis</a>
+
+            <ul class="nav-links">
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#connect" class="nav-link">Social Media</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="about" class="about">
         <div class="about-container">
-            <img src="image.jpeg" alt="">
 
             <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Raizon Asis</h1>
-                    <span>Computer Science Student</span>
+                <div class="name-row">
+                    <img src="image.jpeg" alt="Raizon Asis" class="avatar">
+                    <div class="text">
+                        <h3>Hi, I'm</h3>
+                        <h1>Raizon Asis</h1>
+                        <span>Computer Science Student</span>
+                    </div>
                 </div>
 
                 <div class="btn-group">
                     <a href="RESUME_.pdf" class="btn" download>Download CV</a>
-                    <a href="#contact" class="btn">Contact</a>
+                    <a href="#connect" class="btn">Contact</a>
                 </div>
 
                 <div class="socials">
@@ -37,8 +52,124 @@
                         </svg>
                     </a>
                 </div>
-
             </div>
+
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="code-card-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="code-card-filename">about_me.py</span>
+                    </div>
+                    <pre class="code-card-body"><code><span class="tok-kw">class</span> <span class="tok-class">Engineer</span>:
+    <span class="tok-kw">def</span> <span class="tok-fn">__init__</span>(<span class="tok-self">self</span>):
+        <span class="tok-self">self</span>.name = <span class="tok-str">"Raizon Asis"</span>
+        <span class="tok-self">self</span>.role = <span class="tok-str">"CS Student"</span>
+        <span class="tok-self">self</span>.focus = <span class="tok-str">"Backend Engineering"</span>
+        <span class="tok-self">self</span>.stack = [
+            <span class="tok-str">"Python"</span>, <span class="tok-str">"Django"</span>,
+            <span class="tok-str">"C#"</span>, <span class="tok-str">"SQL"</span>
+        ]
+        <span class="tok-self">self</span>.currently = <span class="tok-str">"open to internships"</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="panel">
+        <h2 class="panel-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Data Verification Intern</h3>
+                    <span class="timeline-org">PAG-ASA</span>
+                    <p>Verified and cross-checked datasets to support accurate reporting, gaining hands-on
+                        experience with real-world data quality workflows.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>B.S. Computer Science — Digital Game Design & Development</h3>
+                    <span class="timeline-org">Ateneo de Manila University</span>
+                    <p>Focusing on backend engineering and software development, while completing coursework
+                        in game design and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="panel panel-alt">
+        <h2 class="panel-title">Projects</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fa-solid fa-calendar-days card-icon"></i>
+                <h3>Common Grounds</h3>
+                <p>A Django-based campus events platform. Built and owned the Local Events module, covering
+                    models, views, and templates end-to-end.</p>
+                <a href="https://github.com/raizonmarasis-droid" target="_blank" rel="noopener noreferrer" class="card-link">
+                    View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-images card-icon"></i>
+                <h3>Seam Carving</h3>
+                <p>A content-aware image resizing tool built with dynamic programming to remove or add seams
+                    while preserving important image content.</p>
+                <a href="https://github.com/raizonmarasis-droid" target="_blank" rel="noopener noreferrer" class="card-link">
+                    View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-guitar card-icon"></i>
+                <h3>Guitar Synthesizer</h3>
+                <p>An audio synthesis project implementing the Karplus-Strong algorithm to physically model
+                    plucked guitar string sounds.</p>
+                <a href="https://github.com/raizonmarasis-droid" target="_blank" rel="noopener noreferrer" class="card-link">
+                    View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section id="certifications" class="panel">
+        <h2 class="panel-title">Certifications</h2>
+        <div class="card-grid">
+            <div class="card cert-card">
+                <i class="fa-solid fa-award card-icon"></i>
+                <h3>Certification Name</h3>
+                <p>Issuing organization — Month Year</p>
+            </div>
+            <div class="card cert-card">
+                <i class="fa-solid fa-award card-icon"></i>
+                <h3>Certification Name</h3>
+                <p>Issuing organization — Month Year</p>
+            </div>
+        </div>
+        <p class="panel-note">
+            <i class="fa-solid fa-pen"></i>
+            Placeholder cards — swap in your actual certifications (name, issuer, and date) in
+            <code>index.html</code>.
+        </p>
+    </section>
+
+    <!-- ===================== SOCIAL / CONNECT ===================== -->
+    <section id="connect" class="panel panel-alt">
+        <h2 class="panel-title">Let's Connect</h2>
+        <div class="connect-grid">
+            <a href="https://github.com/raizonmarasis-droid" target="_blank" rel="noopener noreferrer" class="connect-card">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/raizon-mar-asis-94a9493b9/" target="_blank" rel="noopener noreferrer" class="connect-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
         </div>
     </section>
 
